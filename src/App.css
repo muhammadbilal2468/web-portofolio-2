@@ -1,38 +1,686 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.wp {
+  box-sizing: border-box;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wp .header {
+  box-sizing: border-box;
+  position: relative;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  padding: 0px 10%;
+  background-color: #14172a;
+}
+.wp .header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  /* border: 1px solid white; */
+}
+.wp .header .nav .logo p {
+  color: #ffe100;
+  font-weight: bold;
+  font-size: 32px;
+}
+.wp .header .nav .menu a {
+  text-decoration: none;
+  color: #e2e1e1;
+  padding: 0px 20px;
+}
+.wp .header .nav .menu a:hover {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px #0026ffb6, 0 5px 5px #0042f7b7;
+}
+.wp .header .banner {
+  box-sizing: border-box;
+  display: grid;
+  align-items: center;
+  height: 100%;
+  grid-template-areas: "left center right";
+  grid-template-columns: 2fr 1fr 2fr;
+}
+.wp .header .banner .left {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  /* border: 1px solid white; */
+}
+.wp .header .banner .left p.im {
+  font-size: 56px;
+  color: rgb(221, 213, 213);
+}
+.wp .header .banner .left p.name {
+  font-size: 56px;
+  color: white;
+  font-weight: bold;
+}
+.wp .header .banner .left p.line {
+  font-size: 56px;
+  color: #ffe100;
+  font-weight: bold;
+}
+.wp .header .banner .left p.desc {
+  font-size: 24px;
+  color: #b0afaf;
+}
+.wp .header .banner .center {
+  box-sizing: border-box;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* position: relative; */
+  /* border: 1px solid white; */
+}
+.wp .header .banner .center img,
+.wp .header .banner .center i {
+  position: absolute;
+}
+.wp .header .banner .center i.fa-circle {
+  font-size: 500px;
+  color: #2f2f2f78;
+}
+.wp .header .banner .center img#bilal {
+  width: 450px;
+  height: 90%;
+  z-index: 1;
+}
+.wp .header .banner .center img#bg {
+  width: 500px;
+}
+.wp .header .banner .right {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 40%;
+  z-index: 1;
+  /* border: 1px solid white; */
+}
+.wp .header .banner .right p.title {
+  font-size: 16px;
+  color: rgb(204, 204, 204);
+  margin-bottom: 20px;
+}
+.wp .header .banner .right p.desc {
+  font-size: 16px;
+  color: rgb(235, 235, 235);
+  margin-bottom: 20px;
+}
+.wp .header .banner .right p.button {
+  font-size: 16px;
+  color: #ffe100;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.wp .header .banner .right .sosmed {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+}
+.wp .header .banner .right .sosmed i {
+  font-size: 24px;
+  color: #ffe100;
+  width: 28px;
+  background-color: #66646478;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.wp .header .banner .right .sosmed i:hover {
+  box-shadow: 0 14px 28px #0026ffb6, 0 5px 5px #0042f7b7;
+}
+.wp .header .link {
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1f2443;
+  bottom: -40px;
+  height: 80px;
+  width: 80%;
+  z-index: 1;
+}
+.wp .header .link:hover {
+  box-shadow: 0 14px 28px #0026ffb6, 0 5px 5px #0042f7b7;
+}
+.wp .header .link .box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.wp .header .link .box i {
+  font-size: 38px;
+}
+.wp .header .link .box i.fa-square-github {
+  color: rgb(255, 255, 255);
+}
+.wp .header .link .box i.fa-linkedin {
+  color: rgb(104, 104, 246);
+}
+.wp .header .link .box i.fa-envelope {
+  color: rgb(255, 255, 255);
+}
+.wp .header .link .box a {
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+}
+
+/* ------------------------- ABOUT ----------------------  */
+
+.wp .about {
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: #0e101e;
+  padding: 100px 10%;
+  padding-top: 150px;
+  gap: 100px;
+}
+.wp .about .experience {
+  grid-area: left;
+  color: white;
+  /* border: 1px solid white; */
+}
+.wp .about .education {
+  grid-area: right;
+  color: white;
+  /* border: 1px solid white; */
+}
+
+.wp .about .experience h3.title,
+.wp .about .education h3.title {
+  text-align: center;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.wp .about .experience .sub-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+}
+.wp .about .experience .sub-title p {
+  color: white;
+}
+.wp .about .experience .sub-title i {
+  color: #ffe100;
+}
+
+.wp .about .experience p.desc {
+  color: #b0afaf;
+  margin-bottom: 20px;
+}
+
+.wp .about .education {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.wp .about .education .card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid gray;
+}
+.wp .about .education .card:hover {
+  box-shadow: 0 14px 28px #0026ffb6, 0 5px 5px #0042f7b7;
+}
+.wp .about .education .card img {
+  width: 200px;
+  height: 120px;
+  border: 2px solid white;
+}
+.wp .about .education .card .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+  /* align-items: center; */
+}
+.wp .about .education .card .text p.title {
+  font-size: 24px;
+  /* border: 1px solid white; */
+}
+.wp .about .education .card .text p.desc {
+  font-size: 16px;
+  /* border: 1px solid white; */
+}
+
+/* -------------------- SKILL ------------------- */
+.wp .skill {
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 100px;
+  padding: 100px 10%;
+  background-color: #14172a;
+}
+.wp .skill .softskill {
+  grid-area: left;
+  width: 100%;
+  /* border: 1px solid white; */
+}
+.wp .skill .softskill ul li {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.wp .skill .softskill h3.title,
+.wp .skill .hardskill h3.title {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 50px;
+}
+.wp .skill .hardskill {
+  grid-area: right;
+  place-self: center;
+  width: 100%;
+  /* border: 1px solid white; */
+}
+
+.wp .skill .hardskill li {
+  margin: 20px 0;
+  list-style: none;
+}
+
+.wp .skill .hardskill li p {
+  color: white;
+}
+.wp .skill .hardskill li .bar {
+  background-color: #ffffff;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25);
+}
+
+.wp .skill .hardskill li .bar:hover {
+  box-shadow: 0 14px 28px #0026ffb6, 0 5px 5px #0042f7b7;
+}
+
+.wp .skill .hardskill li .bar span {
+  height: 20px;
+  float: left;
+  border-radius: 10px;
+  /* background: linear-gradient(145deg, #015aff 0%, #0526a9 100%); */
+  background: linear-gradient(145deg, #ffe100 0%, #5865f4 100%);
+  transition: 1s all;
+}
+.wp .skill .hardskill li .bar span:hover {
+  background: linear-gradient(145deg, #ffe100 0%, #ffe100 100%);
+}
+.wp .skill .hardskill li .bar span {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.wp .skill .hardskill li .bar .html {
+  width: 70%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.wp .skill .hardskill li .bar .css {
+  width: 85%;
+}
+
+.wp .skill .hardskill li .bar .javascript {
+  width: 40%;
+}
+.wp .skill .hardskill li .bar .reactjs {
+  width: 50%;
+}
+.wp .skill .hardskill li .bar .nextjs {
+  width: 15%;
+}
+
+/* ------------------------ CONTACT -------------------------- */
+.wp .contacts {
+  padding: 100px 10%;
+  background-color: #0e101e;
+}
+
+.wp .contacts h2 {
+  text-align: center;
+  padding: 0 0 50px 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.wp .contacts .contact {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.wp .contacts .contact .message {
+  padding: 0 10% 0 10%;
+}
+
+.wp .contacts .contact .message .input-box label {
+  color: white;
+}
+.wp .contacts .contact .message .input-box input,
+.wp .contacts .contact .message .input-box textarea {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  height: 2rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 0px 20px;
+}
+
+.wp .contacts .contact .message .input-box textarea {
+  border: 2px solid black;
+  height: 6rem;
+}
+
+.wp .contacts .contact .message button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: #ffe100;
+  color: black;
+}
+
+.wp .contacts .contact .map {
+  display: grid;
+  justify-content: center;
+}
+
+.wp .contacts .contact .map iframe {
+  place-self: center;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.wp .contacts .contact .map iframe:hover {
+  box-shadow: 0 14px 28px #0026ffb6, 0 5px 5px #0042f7b7;
+}
+
+.wp .contacts .contact .map p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffe100;
+}
+
+/* -------------------- FOOTER ----------------------- */
+.wp .footer {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+  padding: 30px 10%;
+  /* justify-content: space-between; */
+}
+
+.wp .footer h3 {
+  margin-bottom: 10px;
+}
+
+.wp .footer .service,
+.wp .footer .hk,
+.wp .footer .links {
+  place-self: center;
+}
+
+.wp .footer li,
+.wp .footer a {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(204, 197, 197);
+}
+
+.cp {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-bottom: 50px;
+}
+
+/* --------------------- RESPONSIVE ------------------------- */
+@media (max-width: 1024px) {
+  .wp .header .nav .logo p {
+    font-size: 28px;
   }
-  to {
-    transform: rotate(360deg);
+  .wp .header .banner .left p.im {
+    font-size: 40px;
+  }
+  .wp .header .banner .left p.name {
+    font-size: 40px;
+  }
+  .wp .header .banner .left p.line {
+    font-size: 40px;
+  }
+  .wp .header .banner .left p.desc {
+    font-size: 16px;
+  }
+  .wp .header .banner .center img,
+  .wp .header .banner .center i {
+    position: absolute;
+  }
+  .wp .header .banner .center i.fa-circle {
+    font-size: 300px;
+  }
+  .wp .header .banner .center img#bilal {
+    width: 350px;
+    height: 90%;
+  }
+  .wp .header .banner .center img#bg {
+    width: 300px;
+  }
+  .wp .header .banner .right p.title {
+    font-size: 14px;
+    color: rgb(204, 204, 204);
+    margin-bottom: 20px;
+  }
+  .wp .header .banner .right p.desc {
+    font-size: 14px;
+    color: rgb(235, 235, 235);
+    margin-bottom: 20px;
+  }
+  .wp .header .banner .right p.button {
+    font-size: 14px;
+  }
+  .wp .header .banner .right .sosmed {
+    display: flex;
+    gap: 5px;
+    text-align: center;
+  }
+  .wp .header .banner .right .sosmed i {
+    font-size: 18px;
+  }
+  .wp .header .link {
+    height: 60px;
+  }
+  .wp .header .link .box i {
+    font-size: 28px;
+  }
+  .wp .header .link .box p {
+    font-size: 20px;
+  }
+
+  .wp .about .experience h3.title,
+  .wp .about .education h3.title {
+    font-size: 28px;
+  }
+
+  .wp .about .experience .sub-title {
+    font-size: 20px;
+  }
+  .wp .about .education .card img {
+    width: 160px;
+    height: 100px;
+  }
+  .wp .about .education .card .text p.title {
+    font-size: 20px;
+  }
+  .wp .about .education .card .text p.desc {
+    font-size: 14px;
+  }
+
+  .wp .skill {
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    padding: 100px 10%;
+    background-color: #14172a;
+  }
+  .wp .skill .softskill {
+    grid-area: left;
+  }
+  .wp .skill .softskill ul li {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .wp .skill .softskill h3.title,
+  .wp .skill .hardskill h3.title {
+    font-size: 24px;
+  }
+  .wp .skill .hardskill li {
+    margin: 10px 0;
+  }
+  .wp .skill .hardskill li .bar {
+    height: 18x;
+  }
+  .wp .contacts h2 {
+    text-align: center;
+    padding: 0 0 50px 0;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .wp .contacts .contact {
+    gap: 30px;
+  }
+
+  .wp .contacts .contact .message {
+    padding: 0 10% 0 10%;
+  }
+
+  .wp .contacts .contact .message .input-box input,
+  .wp .contacts .contact .message .input-box textarea {
+    font-size: 1rem;
+  }
+
+  .wp .contacts .contact .message .input-box textarea {
+    height: 5rem;
+  }
+
+  .wp .contacts .contact .message button {
+    font-size: 1rem;
+  }
+
+  .wp .contacts .contact .map iframe {
+    height: 250px;
+    width: 300px;
+  }
+
+  .wp .contacts .contact .map p {
+    font-size: 1rem;
+  }
+
+  .wp .footer h3 {
+    font-size: 14px;
+  }
+
+  .wp .footer li,
+  .wp .footer a {
+    font-size: 14px;
+  }
+  .cp {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .wp .header {
+    height: 70vh;
+  }
+  .wp .header .banner {
+    display: grid;
+    grid-template-areas: "left center";
+    grid-template-columns: 2fr 1fr;
+  }
+  .wp .header .banner .right {
+    display: none;
+  }
+  .wp .about {
+    grid-template-areas:
+      "left"
+      "right";
+  }
+  .wp .skill {
+    grid-template-areas:
+      "left"
+      "right";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .wp .skill {
+    grid-template-areas:
+      "left"
+      "right";
+  }
+  .wp .header .nav .menu {
+    display: none;
+  }
+  .wp .header .banner {
+    grid-template-areas: "left left left";
+  }
+  .wp .header .left {
+    grid-area: left;
+  }
+  .wp .header .banner .center {
+    display: none;
+  }
+  .wp .header .link {
+    height: 60px;
+    width: 95%;
+  }
+  .wp .header .link .box i {
+    font-size: 20px;
+  }
+  .wp .header .link .box p {
+    font-size: 16px;
+  }
+
+  .wp .footer h3 {
+    font-size: 10px;
+  }
+
+  .wp .footer li,
+  .wp .footer a {
+    font-size: 10px;
+  }
+  .cp {
+    font-size: 12px;
   }
 }
