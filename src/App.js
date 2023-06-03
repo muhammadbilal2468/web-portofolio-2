@@ -116,7 +116,7 @@ const App = () => {
       {/* <!------------------------------ Skill ------------------------------> */}
       <div className="skill" id="skill">
         <div className="softskill">
-          <h3 className="title">Short Skill</h3>
+          <h3 className="title">Soft Skill</h3>
           <ul>
             <li>Antusias</li>
             <li>Bermotivasi Dalam Bekerja</li>
