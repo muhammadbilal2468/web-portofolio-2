@@ -66,7 +66,7 @@ const App = () => {
       {/* <!------------------------------ About ------------------------------> */}
       <div className="about" id="about">
         <div className="experience">
-          <h3 className="title">Experiance</h3>
+          <h3 className="title">Experience</h3>
           <div className="sub-title">
             <i className="fa-solid fa-calendar-check"></i>
             <p className="sub">Magang PT Telkom Palu</p>
