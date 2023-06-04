@@ -1,6 +1,17 @@
 import React from "react";
 import "./App.css";
-import { bgpImg, bilalImg, smkImg, untadImg } from "./asset";
+import {
+  bgpImg,
+  bilalImg,
+  cssImg,
+  expressjsImg,
+  htmlImg,
+  jsImg,
+  nextjsImg,
+  reactjsImg,
+  smkImg,
+  untadImg,
+} from "./asset";
 
 const App = () => {
   return (
@@ -63,7 +74,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      {/* <!------------------------------ About ------------------------------> */}
+      {/* <!------------------------------ ABOUT ------------------------------> */}
       <div className="about" id="about">
         <div className="experience">
           <h3 className="title">Experience</h3>
@@ -127,36 +138,50 @@ const App = () => {
         </div>
         <div className="hardskill">
           <h3 className="title">Hard Skill</h3>
-          <li>
-            <p>HTML</p>
-            <span className="bar">
-              <span className="html"></span>
-            </span>
-          </li>
-          <li>
-            <p>CSS Vanila</p>
-            <span className="bar">
-              <span className="css"></span>
-            </span>
-          </li>
-          <li>
-            <p>JavaScript</p>
-            <span className="bar">
-              <span className="javascript"></span>
-            </span>
-          </li>
-          <li>
-            <p>React JS</p>
-            <span className="bar">
-              <span className="reactjs"></span>
-            </span>
-          </li>
-          <li>
-            <p>Next JS</p>
-            <span className="bar">
-              <span className="nextjs"></span>
-            </span>
-          </li>
+          <div className="language">
+            <div className="box">
+              <img src={htmlImg} alt="logo html" />
+              <div className="text">
+                <p className="title">HTML</p>
+                <p className="desc">Intermediate</p>
+              </div>
+            </div>
+            <div className="box">
+              <img src={cssImg} alt="logo css" />
+              <div className="text">
+                <p className="title">CSS</p>
+                <p className="desc">Advanced</p>
+              </div>
+            </div>
+            <div className="box">
+              <img src={jsImg} alt="logo javascript" />
+              <div className="text">
+                <p className="title">JavaScript</p>
+                <p className="desc">Intermediate</p>
+              </div>
+            </div>
+            <div className="box">
+              <img src={reactjsImg} alt="logo reactjs" />
+              <div className="text">
+                <p className="title">React JS</p>
+                <p className="desc">Intermediate</p>
+              </div>
+            </div>
+            <div className="box">
+              <img src={nextjsImg} alt="logo nextjs" />
+              <div className="text">
+                <p className="title">Next JS</p>
+                <p className="desc">Beginner</p>
+              </div>
+            </div>
+            <div className="box">
+              <img src={expressjsImg} alt="logo expressjs" />
+              <div className="text">
+                <p className="title">Express JS</p>
+                <p className="desc">Beginner</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       {/* <!------------------------------ Contact ----------------------------> */}
