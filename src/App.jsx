@@ -51,9 +51,15 @@ const App = () => {
             </p>
             <p className="button">Lihat Selengkapnya</p>
             <div className="sosmed">
-              <i className="fa-brands fa-facebook-f"></i>
-              <i className="fa-brands fa-instagram"></i>
-              <i className="fa-brands fa-youtube"></i>
+              <a href="https://www.facebook.com/bilalsygfeby">
+                <i className="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/bilal_00s/">
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.youtube.com/@muhammadbilal-qp2sx/featured">
+                <i className="fa-brands fa-youtube"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -66,11 +72,13 @@ const App = () => {
           </div>
           <div className="box">
             <i className="fa-brands fa-linkedin"></i>
-            <a>Linkedin</a>
+            <a href="https://www.linkedin.com/in/muhammad-bilal-314888221/">
+              Linkedin
+            </a>
           </div>
           <div className="box">
             <i className="fa-solid fa-envelope"></i>
-            <a href="muhammadbilalll2468@gmail.com">Email</a>
+            <a href="mailto:muhammadbilalll2468@gmail.com">Email</a>
           </div>
         </div>
       </div>
@@ -258,19 +266,19 @@ const App = () => {
           <ul>
             <li>
               <i className="fa-brands fa-whatsapp"></i>
-              <a href=""> whatsapp</a>
+              <a href="https://wa.me/6282337175785"> whatsapp</a>
             </li>
             <li>
               <i className="fa-brands fa-instagram"></i>
-              <a href=""> instagram</a>
+              <a href="https://www.instagram.com/bilal_00s/"> instagram</a>
             </li>
             <li>
               <i className="fa-brands fa-facebook"></i>
-              <a href=""> facebook</a>
+              <a href="https://www.facebook.com/bilalsygfeb"> facebook</a>
             </li>
             <li>
               <i className="fa-brands fa-telegram"></i>
-              <a href=""> telegram</a>
+              <a href="https://t.me/muhammadbilalll2468"> telegram</a>
             </li>
           </ul>
         </div>

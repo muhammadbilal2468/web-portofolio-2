@@ -22,7 +22,6 @@
   justify-content: space-between;
   align-items: center;
   height: 10%;
-  /* border: 1px solid white; */
 }
 .wp .header .nav .logo p {
   color: #ffe100;
@@ -54,7 +53,6 @@
   display: flex;
   flex-direction: column;
   z-index: 1;
-  /* border: 1px solid white; */
 }
 .wp .header .banner .left p.im {
   font-size: 56px;
@@ -80,7 +78,6 @@
   align-items: center;
   justify-content: center;
   /* position: relative; */
-  /* border: 1px solid white; */
 }
 .wp .header .banner .center img,
 .wp .header .banner .center i {
@@ -103,7 +100,6 @@
   flex-direction: column;
   padding: 0 0 0 40%;
   z-index: 1;
-  /* border: 1px solid white; */
 }
 .wp .header .banner .right p.title {
   font-size: 16px;
@@ -194,12 +190,10 @@
 .wp .about .experience {
   grid-area: left;
   color: white;
-  /* border: 1px solid white; */
 }
 .wp .about .education {
   grid-area: right;
   color: white;
-  /* border: 1px solid white; */
 }
 
 .wp .about .experience h3.title,
@@ -253,15 +247,12 @@
   flex-direction: column;
   justify-content: center;
   margin-left: 30px;
-  /* align-items: center; */
 }
 .wp .about .education .card .text p.title {
   font-size: 24px;
-  /* border: 1px solid white; */
 }
 .wp .about .education .card .text p.desc {
   font-size: 16px;
-  /* border: 1px solid white; */
 }
 
 /* -------------------- SKILL ------------------- */
@@ -269,13 +260,12 @@
   display: grid;
   grid-template-areas: "left right";
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 100px;
   padding: 100px 10%;
+  gap: 100px;
   background-color: #14172a;
 }
 .wp .skill .softskill {
   grid-area: left;
-  /* border: 1px solid white; */
 }
 .wp .skill .softskill ul li {
   color: white;
@@ -292,7 +282,6 @@
   grid-area: right;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid white; */
 }
 .wp .skill .hardskill .language {
   display: grid;
@@ -315,6 +304,9 @@
   border-radius: 50%;
   border: 3px solid white;
   padding: 5px;
+}
+.wp .skill .hardskill .language .box img:hover {
+  box-shadow: 0 14px 28px #0026ffb6, 0 5px 5px #0042f7b7;
 }
 .wp .skill .hardskill .language .box .text p.title {
   color: white;
@@ -510,6 +502,7 @@
     width: 160px;
     height: 100px;
   }
+
   .wp .about .education .card .text p.title {
     font-size: 20px;
   }
@@ -519,36 +512,26 @@
 
   .wp .skill {
     display: grid;
-    grid-template-areas: "left right";
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
-    padding: 100px 10%;
-    background-color: #14172a;
-  }
-  .wp .skill .softskill {
-    grid-area: left;
+    grid-template-areas:
+      "left"
+      "right";
   }
   .wp .skill .softskill ul li {
-    color: white;
-    margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 20px;
   }
   .wp .skill .softskill h3.title,
   .wp .skill .hardskill h3.title {
     font-size: 24px;
   }
-  .wp .skill .hardskill li {
-    margin: 10px 0;
+  .wp .skill .hardskill .language .box img {
+    width: 40px;
+    height: 40px;
   }
-  .wp .skill .hardskill li .bar {
-    height: 18x;
+  .wp .skill .hardskill .language .box .text p.title {
+    font-size: 20px;
   }
-  .wp .contacts h2 {
-    text-align: center;
-    padding: 0 0 50px 0;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    color: white;
+  .wp .skill .hardskill .language .box .text p.desc {
+    font-size: 14px;
   }
 
   .wp .contacts .contact {
@@ -593,9 +576,14 @@
     font-size: 16px;
   }
 }
+@media (max-width: 912px) {
+  .wp .header {
+    height: 60vh;
+  }
+}
 @media (max-width: 768px) {
   .wp .header {
-    height: 70vh;
+    height: 60vh;
   }
   .wp .header .banner {
     display: grid;
@@ -614,7 +602,16 @@
     grid-template-areas:
       "left"
       "right";
-    grid-template-columns: 1fr 1fr;
+  }
+  .wp .skill .hardskill .language .box img {
+    width: 30px;
+    height: 30px;
+  }
+  .wp .skill .hardskill .language .box .text p.title {
+    font-size: 20px;
+  }
+  .wp .skill .hardskill .language .box .text p.desc {
+    font-size: 14px;
   }
 }
 @media (max-width: 480px) {
@@ -644,6 +641,22 @@
   }
   .wp .header .link .box a {
     font-size: 16px;
+  }
+  .wp .skill .softskill {
+    grid-area: left;
+  }
+  .wp .skill .softskill ul li {
+    font-size: 16px;
+  }
+  .wp .skill .hardskill .language .box img {
+    width: 25px;
+    height: 25px;
+  }
+  .wp .skill .hardskill .language .box .text p.title {
+    font-size: 16px;
+  }
+  .wp .skill .hardskill .language .box .text p.desc {
+    font-size: 10px;
   }
 
   .wp .footer h3 {
