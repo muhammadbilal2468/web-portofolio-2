@@ -8,8 +8,10 @@ import {
   htmlImg,
   jsImg,
   nextjsImg,
+  pythonImg,
   reactjsImg,
   smkImg,
+  tailwindImg,
   untadImg,
 } from "./asset";
 
@@ -162,6 +164,13 @@ const App = () => {
               </div>
             </div>
             <div className="box">
+              <img src={tailwindImg} alt="logo css" />
+              <div className="text">
+                <p className="title">Tailwind CSS</p>
+                <p className="desc">Beginner</p>
+              </div>
+            </div>
+            <div className="box">
               <img src={jsImg} alt="logo javascript" />
               <div className="text">
                 <p className="title">JavaScript</p>
@@ -186,6 +195,13 @@ const App = () => {
               <img src={expressjsImg} alt="logo expressjs" />
               <div className="text">
                 <p className="title">Express JS</p>
+                <p className="desc">Beginner</p>
+              </div>
+            </div>
+            <div className="box">
+              <img src={pythonImg} alt="logo expressjs" />
+              <div className="text">
+                <p className="title">Python</p>
                 <p className="desc">Beginner</p>
               </div>
             </div>
