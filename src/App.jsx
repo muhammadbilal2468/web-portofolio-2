@@ -12,6 +12,7 @@ import {
   reactjsImg,
   smkImg,
   tailwindImg,
+  tsImg,
   untadImg,
 } from "./asset";
 
@@ -139,11 +140,14 @@ const App = () => {
         <div className="softskill">
           <h3 className="title">Soft Skill</h3>
           <ul>
-            <li>Antusias</li>
-            <li>Bermotivasi Dalam Bekerja</li>
             <li>Disiplin</li>
+            <li>Manajemen waktu</li>
+            <li>Mampu Beradaptasi</li>
+            <li>Bermotivasi Dalam Bekerja</li>
             <li>Mampu Berkomunikasi Dengan Baik</li>
             <li>Mampu Bekerja Sama Tim Dengan Baik</li>
+            <li>Kecerdasan Emosional</li>
+            <li>Antusias</li>
           </ul>
         </div>
         <div className="hardskill">
@@ -175,6 +179,13 @@ const App = () => {
               <div className="text">
                 <p className="title">JavaScript</p>
                 <p className="desc">Intermediate</p>
+              </div>
+            </div>
+            <div className="box">
+              <img src={tsImg} alt="logo javascript" />
+              <div className="text">
+                <p className="title">TypeScript</p>
+                <p className="desc">Beginner</p>
               </div>
             </div>
             <div className="box">
