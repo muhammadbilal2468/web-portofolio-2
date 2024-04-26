@@ -24,7 +24,7 @@
   height: 10%;
 }
 .wp .header .nav .logo p {
-  color: #ffe100;
+  color: #ffcc66;
   font-weight: bold;
   font-size: 32px;
 }
@@ -65,7 +65,7 @@
 }
 .wp .header .banner .left p.line {
   font-size: 56px;
-  color: #ffe100;
+  color: #ffcc66;
   font-weight: bold;
 }
 .wp .header .banner .left p.desc {
@@ -113,7 +113,7 @@
 }
 .wp .header .banner .right p.button {
   font-size: 16px;
-  color: #ffe100;
+  color: #ffcc66;
   border-radius: 10px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -126,7 +126,7 @@
 }
 .wp .header .banner .right .sosmed i {
   font-size: 24px;
-  color: #ffe100;
+  color: #ffcc66;
   width: 28px;
   background-color: #66646478;
   padding: 10px;
@@ -214,7 +214,7 @@
   color: white;
 }
 .wp .about .experience .sub-title i {
-  color: #ffe100;
+  color: #ffcc66;
 }
 
 .wp .about .experience p.desc {
@@ -369,7 +369,7 @@
   border-radius: 10px;
   font-size: 1.1rem;
   cursor: pointer;
-  background-color: #ffe100;
+  background-color: #ffcc66;
   color: black;
 }
 
@@ -391,7 +391,7 @@
 .wp .contacts .contact .map p {
   font-size: 1.2rem;
   text-align: center;
-  color: #ffe100;
+  color: #ffcc66;
 }
 
 /* -------------------- FOOTER ----------------------- */

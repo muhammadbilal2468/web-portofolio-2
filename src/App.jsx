@@ -171,7 +171,7 @@ const App = () => {
               <img src={tailwindImg} alt="logo css" />
               <div className="text">
                 <p className="title">Tailwind CSS</p>
-                <p className="desc">Beginner</p>
+                <p className="desc">Intermediate</p>
               </div>
             </div>
             <div className="box">
@@ -209,13 +209,6 @@ const App = () => {
                 <p className="desc">Beginner</p>
               </div>
             </div>
-            <div className="box">
-              <img src={pythonImg} alt="logo expressjs" />
-              <div className="text">
-                <p className="title">Python</p>
-                <p className="desc">Beginner</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -241,13 +234,14 @@ const App = () => {
                 <label for="">Message</label>
                 <textarea></textarea>
               </div>
-              <a href="">
+              <a href="#">
                 <button>Kirim</button>
               </a>
             </form>
           </div>
           <div className="map">
             <iframe
+              title="map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2302.2334773816306!2d119.85768454370279!3d-0.9333897045341931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf3e48cb07fcac56!2zMMKwNTYnMDAuNCJTIDExOcKwNTEnMjYuOCJF!5e0!3m2!1sen!2sid!4v1660745344999!5m2!1sen!2sid"
               width="400"
               height="300"
