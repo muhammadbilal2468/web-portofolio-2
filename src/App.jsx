@@ -91,11 +91,13 @@ const App = () => {
           <h3 className="title">Experience</h3>
           <div className="sub-title">
             <i className="fa-solid fa-calendar-check"></i>
-            <p className="sub">Magang PT Telkom Palu</p>
+            <p className="sub">Magang Yayasan Hasnur Centre</p>
           </div>
           <p className="desc">
-            Saya mengikuti magang di PT Telkom palu pada tahun 2018 selama 6
-            bulan di bagian Bisnis dan Jaringan.
+            Saya mengikuti magang dari Kampus Merdeka batch 5 di PT MKA pada
+            tahun 2023 selama 5 bulan sebagai web developer membuat aplikasi
+            berbagai aplikasi dari client dan bekerja dibawah Mentor (Pegawai
+            Kantor).
           </p>
           <div className="sub-title">
             <i className="fa-solid fa-calendar-check"></i>
@@ -105,6 +107,14 @@ const App = () => {
             Saya mengikuti magang dari Kampus Merdeka batch 3 di PT MKA pada
             tahun 2022 selama 5 bulan sebagai frontend dev membuat aplikasi
             Rentalkuy yaitu aplikasi sewa barang.
+          </p>
+          <div className="sub-title">
+            <i className="fa-solid fa-calendar-check"></i>
+            <p className="sub">Magang PT Telkom Palu</p>
+          </div>
+          <p className="desc">
+            Saya mengikuti magang di PT Telkom palu pada tahun 2018 selama 6
+            bulan di bagian Bisnis dan Jaringan.
           </p>
           <div className="sub-title">
             <i className="fa-solid fa-calendar-check"></i>
