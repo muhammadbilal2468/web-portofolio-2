@@ -749,6 +749,12 @@
     width: 25px;
     height: 25px;
   }
+
+  .wp .skill .hardskill .language .box img:hover {
+    width: 35px;
+    height: 35px;
+  }
+
   .wp .skill .hardskill .language .box .text p.title {
     font-size: 16px;
   }
