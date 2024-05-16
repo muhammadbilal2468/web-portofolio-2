@@ -230,20 +230,20 @@ const App = () => {
       <div className="project" id="project">
         <h2>Project Portofolio</h2>
         <div className="list-card">
-          <a href="https://portofolio2bilal.vercel.app/">
-            <div className="card">
-              <div className="bg">
-                <img src={webPortofolio1Img} alt="" />
-                <p className="static">statis</p>
-              </div>
-              <div className="content">
-                <p className="title">Web Portofolio</p>
-                <p className="desc">
-                  Webiste portofolio yang menjelaskan data diri, skill,
-                  portofoilo, dan contact diri saya sendiri. Website ini dibuat
-                  menggunakan <span>React JS</span> dan <span>CSS Native</span>{" "}
-                  tanpa framework CSS. Dibuat oleh Seorang diri tanpa tim.
-                </p>
+          <div className="card">
+            <div className="bg">
+              <img src={webPortofolio1Img} alt="" />
+              <p className="static">statis</p>
+            </div>
+            <div className="content">
+              <p className="title">Web Portofolio</p>
+              <p className="desc">
+                Webiste portofolio yang menjelaskan data diri, skill,
+                portofoilo, dan contact diri saya sendiri. Website ini dibuat
+                menggunakan <span>React JS</span> dan <span>CSS Native</span>{" "}
+                tanpa framework CSS. Dibuat oleh Seorang diri tanpa tim.
+              </p>
+              <a href="https://portofolio2bilal.vercel.app/">
                 <button>
                   Kunjungi{" "}
                   <svg
@@ -274,23 +274,23 @@ const App = () => {
                     />
                   </svg>
                 </button>
-              </div>
+              </a>
             </div>
-          </a>
-          <a href="https://fekon-untad.vercel.app/">
-            <div className="card">
-              <div className="bg">
-                <img src={fekonImg} alt="" />
-                <p className="static">statis</p>
-              </div>
-              <div className="content">
-                <p className="title">S1 Akuntansi</p>
-                <p className="desc">
-                  Webiste profil dari S1 Akuntansi Sektor Publik Universitas
-                  Tadulako dengan menggunakan <span>React JS</span>,
-                  <span>Tailwind CSS</span>, <span>Flowbite</span>. Frontend
-                  Dibuat oleh Seorang diri tanpa tim.
-                </p>
+          </div>
+          <div className="card">
+            <div className="bg">
+              <img src={fekonImg} alt="" />
+              <p className="static">statis</p>
+            </div>
+            <div className="content">
+              <p className="title">S1 Akuntansi</p>
+              <p className="desc">
+                Webiste profil dari S1 Akuntansi Sektor Publik Universitas
+                Tadulako dengan menggunakan <span>React JS</span>,
+                <span>Tailwind CSS</span>, <span>Flowbite</span>. Frontend
+                Dibuat oleh Seorang diri tanpa tim.
+              </p>
+              <a href="https://fekon-untad.vercel.app/">
                 <button>
                   Kunjungi{" "}
                   <svg
@@ -321,26 +321,26 @@ const App = () => {
                     />
                   </svg>
                 </button>
-              </div>
+              </a>
             </div>
-          </a>
-          <a href="https://youtu.be/TU6w20CLnrQ?feature=shared">
-            <div className="card">
-              <div className="bg">
-                <img src={rentalgooImg} alt="" />
-                <p className="dinamyc">Dinamis</p>
-              </div>
-              <div className="content">
-                <p className="title">Rental Goo</p>
-                <p className="desc">
-                  Webiste rental barang dengan sistem e-commerce, dimana semua
-                  pengguna dapat menyewa maupun menyewakan. Teknologi digunakan{" "}
-                  <span>
-                    Node JS, Express JS, Sequalize, MYSQL, RESTFULL API, React
-                    JS, Tailwind CSS, Flowbite, Map Leaflet, DLL
-                  </span>
-                  . Fullstack Dibuat oleh Seorang diri tanpa tim.
-                </p>
+          </div>
+          <div className="card">
+            <div className="bg">
+              <img src={rentalgooImg} alt="" />
+              <p className="dinamyc">Dinamis</p>
+            </div>
+            <div className="content">
+              <p className="title">Rental Goo</p>
+              <p className="desc">
+                Webiste rental barang dengan sistem e-commerce, dimana semua
+                pengguna dapat menyewa maupun menyewakan. Teknologi digunakan{" "}
+                <span>
+                  Node JS, Express JS, Sequalize, MYSQL, RESTFULL API, React JS,
+                  Tailwind CSS, Flowbite, Map Leaflet, DLL
+                </span>
+                . Fullstack Dibuat oleh Seorang diri tanpa tim.
+              </p>
+              <a href="https://youtu.be/TU6w20CLnrQ?feature=shared">
                 <button>
                   Nonton Demo{" "}
                   <svg
@@ -359,9 +359,9 @@ const App = () => {
                     />
                   </svg>
                 </button>
-              </div>
+              </a>
             </div>
-          </a>
+          </div>
         </div>
       </div>
 
