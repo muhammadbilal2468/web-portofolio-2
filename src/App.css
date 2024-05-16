@@ -132,8 +132,10 @@
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.5s;
 }
 .wp .header .banner .right .sosmed i:hover {
+  padding: 12px;
   box-shadow: 0 14px 28px #0026ffb6, 0 5px 5px #0042f7b7;
 }
 .wp .header .link {
@@ -233,8 +235,11 @@
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 2px solid gray;
+  transition: 0.5s;
 }
 .wp .about .education .card:hover {
+  padding: 14px;
+  border-radius: 10px;
   box-shadow: 0 14px 28px #0026ffb6, 0 5px 5px #0042f7b7;
 }
 .wp .about .education .card img {
@@ -304,8 +309,11 @@
   border-radius: 50%;
   border: 3px solid white;
   padding: 5px;
+  transition: 0.5s;
 }
 .wp .skill .hardskill .language .box img:hover {
+  width: 55px;
+  height: 55px;
   box-shadow: 0 14px 28px #0026ffb6, 0 5px 5px #0042f7b7;
 }
 .wp .skill .hardskill .language .box .text p.title {
@@ -318,10 +326,99 @@
   font-size: 16px;
 }
 
+/* ------------------------ POJECT -------------------------- */
+.wp .project {
+  padding: 50px 0;
+  background-color: #0e101e;
+}
+.wp .project h2 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+.wp .project .list-card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-rows: repeat(3, minmax(1fr));
+  padding: 100px 10%;
+  gap: 100px;
+}
+
+.wp .project .list-card a {
+  text-decoration: none;
+}
+.wp .project .list-card .card {
+  width: 100%;
+  transition: 0.5s;
+}
+.wp .project .list-card .card:hover {
+  padding: 10px;
+  border-radius: 10px;
+  translate: -25px;
+  box-shadow: 0 14px 28px #0026ffb6, 0 5px 5px #0042f7b7;
+}
+.wp .project .list-card .card .bg {
+  position: relative;
+}
+.wp .project .list-card .card .bg img {
+  border-radius: 10px;
+  width: 100%;
+  border: 2px solid white;
+}
+.wp .project .list-card .card .bg p.static {
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  padding: 2px 16px;
+  background-color: rgb(4, 117, 216);
+  color: white;
+  border-radius: 10px;
+}
+.wp .project .list-card .card .bg p.dinamyc {
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  padding: 2px 16px;
+  background-color: rgb(218, 0, 200);
+  color: white;
+  border-radius: 10px;
+}
+.wp .project .list-card .card .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wp .project .list-card .card .content p.title {
+  font-size: 28px;
+  color: white;
+}
+
+.wp .project .list-card .card .content p.desc {
+  font-size: 12px;
+  text-align: justify;
+  color: rgb(204, 204, 204);
+}
+.wp .project .list-card .card .content p.desc span {
+  color: white;
+  font-weight: 900;
+}
+.wp .project .list-card .card .content button {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 2px 10px;
+  width: fit-content;
+}
+
 /* ------------------------ CONTACT -------------------------- */
 .wp .contacts {
   padding: 100px 10%;
-  background-color: #0e101e;
+  background-color: #14172a;
 }
 
 .wp .contacts h2 {
@@ -657,6 +754,13 @@
   }
   .wp .skill .hardskill .language .box .text p.desc {
     font-size: 10px;
+  }
+
+  .wp .project .list-card {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    padding: 100px 10%;
+    gap: 100px;
   }
 
   .wp .footer h3 {

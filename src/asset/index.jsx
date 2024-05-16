@@ -10,4 +10,6 @@ export { default as tsImg } from "./img/ts.png";
 export { default as reactjsImg } from "./img/reactjs.png";
 export { default as nextjsImg } from "./img/nextjs.png";
 export { default as expressjsImg } from "./img/expressjs.png";
-export { default as pythonImg } from "./img/python.png";
+export { default as webPortofolio1Img } from "./img/webportofolio1.png";
+export { default as fekonImg } from "./img/fekon.png";
+export { default as rentalgooImg } from "./img/rentalgoo.png";
