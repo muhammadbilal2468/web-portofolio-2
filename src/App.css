@@ -763,6 +763,10 @@
     gap: 100px;
   }
 
+  .wp .project .list-card .card:hover {
+    translate: -10px;
+  }
+
   .wp .footer h3 {
     font-size: 10px;
   }
